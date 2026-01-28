@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contatta Studio 4e per consulenze su ristrutturazioni, investimenti e hospitality tra Catania, Etna e Taormina.">
+    <title>Contatti | Architetti Catania</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .hero-contact {
+            background-image: url('images/scala-villa_con_giardino_a_partanna.webp');
+            height: 50vh;
+        }
+        
+        .contact-wrapper {
+            background: #fff;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: -80px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .contact-form-section { padding: 50px; }
+        .contact-info-section { background: var(--primary-dark); color: white; padding: 50px; }
+        
+        /* Form Styles */
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; font-size: 0.9rem; margin-bottom: 8px; font-weight: 600; color: #333; }
+        .form-control {
+            width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px;
+            font-family: var(--font-body); transition: all 0.3s;
+        }
+        .form-control:focus { border-color: var(--accent-bronze); outline: none; }
+        textarea.form-control { resize: vertical; height: 120px; }
+        
+        .info-item { display: flex; gap: 20px; margin-bottom: 30px; }
+        .info-icon { width: 40px; height: 40px; background: var(--secondary-dark); display: flex; align-items: center; justify-content: center; color: var(--accent-bronze); border-radius: 50%; }
+    </style>
+    <script src="/site.js" defer></script>
+</head>
+<body>
+<nav class="site-nav" id="top">
+  <div class="container nav-container">
+    <a class="logo" href="/index.html" aria-label="Architetti Catania">
+      <span class="logo-title">ARCHITETTI</span><span class="logo-accent">CATANIA</span>
+      <span class="logo-sub">Studio 4e · Architettura & Project Management</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Apri menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/index.html#vivere">Residenze</a></li>
+      <li><a href="/investimenti.html">Investimenti</a></li>
+      <li><a href="/business.html">Business</a></li>
+      <li><a href="/journal/index.html">Journal</a></li>
+      <li><a href="/en/blog/index.html">English Guides</a></li>
+      <li><a href="/contatti.html" class="cta-nav">Prenota Consulenza</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+    
+
+    <header class="hero hero-contact">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content text-center">
+            <h1>Inizia il tuo Progetto</h1>
+            <h2>Compila il modulo per uno studio di fattibilità preliminare.</h2>
+        </div>
+    </header>
+
+    <section class="section-padding bg-light" style="padding-top: 0;">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="grid-2-col" style="gap:0;">
+                    
+                    <div class="contact-form-section">
+                        <form>
+                            <div class="grid-2-col" style="gap:20px; margin-bottom:0;">
+                                <div class="form-group">
+                                    <label>Nome e Cognome</label>
+                                    <input type="text" class="form-control" placeholder="Il tuo nome">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" placeholder="info@studio4e.it">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Tipologia Intervento</label>
+                                <select class="form-control">
+                                    <option>Ristrutturazione Totale (Residenziale)</option>
+                                    <option>Investimento Immobiliare (Estero/Expat)</option>
+                                    <option>Business (Hotel/Ristorante/Cantina)</option>
+                                    <option>Nuova Costruzione</option>
+                                    <option>Altro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Budget Stimato per i Lavori</label>
+                                <select class="form-control">
+                                    <option value="low">50.000€ - 100.000€</option>
+                                    <option value="medium" selected>100.000€ - 250.000€</option>
+                                    <option value="high">250.000€ - 500.000€</option>
+                                    <option value="luxury">Oltre 500.000€</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Messaggio</label>
+                                <textarea class="form-control" placeholder="Descrivi brevemente l'immobile (es. Mq, zona, stato attuale)..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width:100%;">Invia Richiesta</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-section">
+                        <h4 style="color:var(--accent-bronze); margin-bottom:30px;">Su di noi</h4>
+                        
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <strong>Sede Operativa</strong>
+                                <p style="color:#ccc; font-size:0.9rem;">Palermo — Piazza Sant’Oliva 19</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <strong>Telefono</strong>
+                                <p style="color:#ccc; font-size:0.9rem;">+39 329 973 6697<br>Lun-Ven: 09:00 - 18:00</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div>
+                                <strong>WhatsApp Diretto</strong>
+                                <p style="color:#ccc; font-size:0.9rem;">+39 329 973 6697<br>Risposta rapida</p>
+                            </div>
+                        </div>
+
+                        <div style="margin-top:50px; border-top:1px solid #444; padding-top:20px;">
+                            <p style="font-size:0.8rem; color:#888;">Riceviamo solo su appuntamento per garantire la massima riservatezza ai nostri clienti.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+
+
+<footer class="footer site-footer" id="contatti">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">ARCHITETTI<span class="accent-text">CATANIA</span></div>
+      <p>Studio 4e — Architettura tecnica, direzione lavori e project management per immobili di pregio in Sicilia.</p>
+      <div class="footer-cta">
+        <a class="btn btn-primary" href="/contatti.html">Richiedi una consulenza</a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <h5>Sedi</h5>
+      <ul>
+                <li>Palermo — Piazza Sant’Oliva 19</li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h5>Contatti</h5>
+      <ul>
+        <li><a href="tel:+393299736697">+39 329 973 6697</a></li>
+        <li><a href="mailto:info@studio4e.it">info@studio4e.it</a></li>
+        <li><a href="https://wa.me/393299736697?text=Salve%2C%20vorrei%20prenotare%20una%20consulenza%20per%20un%20progetto%20immobiliare%20in%20Sicilia." target="_blank" rel="noopener">WhatsApp diretto</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h5>Sezioni</h5>
+      <ul>
+        <li><a href="/journal/index.html">Journal</a></li>
+        <li><a href="/investimenti.html">Investimenti</a></li>
+        <li><a href="/business.html">Business</a></li>
+        <li><a href="/en/blog/index.html">English Guides</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Studio 4e. All rights reserved.</p>
+  </div>
+</footer>
+<a class="whatsapp-float" href="https://wa.me/393299736697?text=Salve%2C%20vorrei%20prenotare%20una%20consulenza%20per%20un%20progetto%20immobiliare%20in%20Sicilia." target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+</body>
+</html>
