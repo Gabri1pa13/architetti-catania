@@ -674,3 +674,50 @@ img { max-width: 100%; display: block; }
 }
 
 .text-white { color: var(--white); }
+
+/* --- BREADCRUMBS --- */
+.breadcrumb-container {
+    padding: 12px 0;
+}
+.breadcrumb {
+    font-size: 0.82rem;
+    color: var(--text);
+    font-family: var(--font-body);
+    letter-spacing: 0.02em;
+}
+.breadcrumb a {
+    color: var(--bronze);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.breadcrumb a:hover {
+    color: var(--bronze-dark);
+    text-decoration: underline;
+}
+.breadcrumb-sep {
+    margin: 0 6px;
+    color: var(--mist);
+}
+.breadcrumb span:last-child {
+    color: var(--text);
+}
+
+/* --- ARTICLE DATE --- */
+.article-date {
+    display: inline-block;
+    font-size: 0.82rem;
+    color: var(--bronze);
+    font-family: var(--font-body);
+    letter-spacing: 0.03em;
+    margin-bottom: 8px;
+}
+
+/* --- HERO SUBTITLE (replaces misused H2) --- */
+.hero-subtitle {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.85);
+    max-width: 700px;
+    margin: 0 auto;
+    font-weight: 300;
+}
