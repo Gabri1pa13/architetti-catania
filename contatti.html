@@ -37,11 +37,15 @@
         }
         .form-control:focus { border-color: var(--accent-bronze); outline: none; }
         textarea.form-control { resize: vertical; height: 120px; }
+        .form-group label.form-consent { display: flex; gap: 10px; align-items: flex-start; font-weight: 400; font-size: 0.85rem; line-height: 1.5; color: #555; cursor: pointer; }
+        .form-consent input { margin-top: 3px; accent-color: var(--accent-bronze); flex-shrink: 0; }
+        .form-consent a { color: var(--accent-bronze); text-decoration: underline; }
         
         .info-item { display: flex; gap: 20px; margin-bottom: 30px; }
         .info-icon { width: 40px; height: 40px; background: var(--secondary-dark); display: flex; align-items: center; justify-content: center; color: var(--accent-bronze); border-radius: 50%; }
     </style>
     <script src="/site.js" defer></script>
+    <script src="/archflow-lead.js" defer></script>
 
     <link rel="canonical" href="https://www.architetticatania.it/contatti.html">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -134,21 +138,21 @@
                 <div class="grid-2-col" style="gap:0;">
                     
                     <div class="contact-form-section">
-                        <form>
+                        <form id="contact-form" data-title="Richiesta dal sito Architetti Catania — Contatti">
                             <div class="grid-2-col" style="gap:20px; margin-bottom:0;">
                                 <div class="form-group">
                                     <label>Nome e Cognome</label>
-                                    <input type="text" class="form-control" placeholder="Il tuo nome">
+                                    <input type="text" id="cf-nome" class="form-control" placeholder="Il tuo nome">
                                 </div>
                                 <div class="form-group">
                                     <label>Email</label>
-                                    <input type="email" class="form-control" placeholder="info@studio4e.it">
+                                    <input type="email" id="cf-email" class="form-control" placeholder="info@studio4e.it">
                                 </div>
                             </div>
                             
                             <div class="form-group">
                                 <label>Tipologia Intervento</label>
-                                <select class="form-control">
+                                <select id="cf-tipologia" class="form-control">
                                     <option>Ristrutturazione Totale (Residenziale)</option>
                                     <option>Investimento Immobiliare (Estero/Expat)</option>
                                     <option>Business (Hotel/Ristorante/Cantina)</option>
@@ -159,7 +163,7 @@
 
                             <div class="form-group">
                                 <label>Budget Stimato per i Lavori</label>
-                                <select class="form-control">
+                                <select id="cf-budget" class="form-control">
                                     <option value="low">50.000€ - 100.000€</option>
                                     <option value="medium" selected>100.000€ - 250.000€</option>
                                     <option value="high">250.000€ - 500.000€</option>
@@ -169,7 +173,11 @@
 
                             <div class="form-group">
                                 <label>Messaggio</label>
-                                <textarea class="form-control" placeholder="Descrivi brevemente l'immobile (es. Mq, zona, stato attuale)..."></textarea>
+                                <textarea id="cf-messaggio" class="form-control" placeholder="Descrivi brevemente l'immobile (es. Mq, zona, stato attuale)..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-consent" for="privacy-ok"><input type="checkbox" id="privacy-ok"> <span>Ho letto l'<a href="https://architettisicilia.it/privacy/" target="_blank" rel="noopener">informativa privacy</a> e acconsento al trattamento dei miei dati per essere ricontattato.</span></label>
                             </div>
 
                             <button type="submit" class="btn btn-primary" style="width:100%;">Invia Richiesta</button>
